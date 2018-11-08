@@ -1,19 +1,19 @@
-//Program wczytuje liczbê ca³kowit¹ i liczy sumê cyfr z których zbudowana jest liczba.
+//Program wczytuje liczbÄ™ caÅ‚kowitÅ¡ i liczy sumÄ™ cyfr z ktÃ³rych zbudowana jest liczba.
 
 #include <stdio.h>
 int main()
 {
-    int liczba,suma=0;
+    int l,suma=0;
 
-    printf("Podaj liczbe :  ",liczba);
-    scanf("%d",&liczba);
-    while(liczba!=0)
+    printf("Podaj liczbe :  ",l);
+    scanf("%d",&l);
+    while(l!=0)
     {
-        suma+=liczba%10;
-        liczba /= 10;
+        suma+=l%10;
+        l /= 10;
     }
 
-    printf("Suma cyfr podanej liczby wynosi : %i",suma);
+    printf("Tyle wynosi suma cyfr : %i",suma);
 
     getchar();
     return 0;
